@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    ;
+    width: 100vw;
 }
 
 /* ---------------------------------- utility classes ------------------- */
@@ -51,8 +51,6 @@ body {
     display: block;
     margin: auto;
     opacity: 1;
-
-
 }
 
 
@@ -124,7 +122,8 @@ body {
     font-size: 4.5rem;
     font-weight: 500;
     font-style: italic;
-    color: rgb(65, 18, 115)
+    /* color: rgb(65, 18, 115) */
+    color: #2f2d2d;    
         /* transform: translateX(-700%);
     animation: logo-animation 0.3s ease-in-out forwards; */
 
@@ -140,7 +139,7 @@ body {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    transition: color 3s ease-in-out;
+    transition: color 5s ease-in-out;
     /* transform: translateY(200%); */
 }
 
@@ -153,7 +152,7 @@ body {
     /* font-style: italic; */
     font-weight: 500;
     transform: translateX(-220%);
-    animation: containt-div-h1 .9s ease-in-out forwards;
+    animation: containt-div-h1 2s ease-in-out forwards;
 }
 
 @keyframes containt-div-h1 {
@@ -222,7 +221,7 @@ body {
 }
 
 .camp1-img {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, 0.1)), url(i2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, 0.1)), url(/assets/i2.jpg);
     display: block;
     width: 85%;
     margin: auto;
@@ -236,7 +235,7 @@ body {
 }
 
 .camp1-img:hover {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5)), url(i2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5)), url(/assets/i2.jpg);
     display: block;
     width: 88%;
     margin: auto;
@@ -248,7 +247,7 @@ body {
 }
 
 .camp2-img {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(i3.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/assets/i3.jpg);
     display: block;
     width: 85%;
     margin: auto;
@@ -263,7 +262,7 @@ body {
 }
 
 .camp2-img:hover {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5)), url(i3.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5)), url(/assets/i3.jpg);
     display: block;
     width: 88%;
     margin: auto;
@@ -316,7 +315,7 @@ body {
 /* ################################################# explor-the-world ########################################3*/
 
 .etw-img {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url(i4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url(/assets/i4.jpg);
     width: 100%;
     height: 69vh;
     margin: 8rem auto 10rem auto;
@@ -417,14 +416,14 @@ body {
 }
 
 .tours-img {
-    width: 46%;
-    height: 27.5vh;
+    width: 50%;
+    height: 30%;
     /* border: 1px solid salmon; */
     margin: 1rem auto;
 }
 
 .t1 {
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(i5.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(/assets/i5.jpg);
     width: 46%;
     height: 27.5vh;
     display: block;
@@ -435,7 +434,7 @@ body {
 }
 
 .t2 {
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(i6.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(/assets/i6.jpg);
     width: 46%;
     height: 27.5vh;
     display: block;
@@ -446,7 +445,7 @@ body {
 }
 
 .t3 {
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(i7.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(/assets/i7.jpg);
     width: 46%;
     height: 27.5vh;
     display: block;
@@ -457,7 +456,7 @@ body {
 }
 
 .t4 {
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(i8.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(/assets/i8.jpg);
     width: 46%;
     height: 27.5vh;
     display: block;
@@ -599,15 +598,16 @@ body {
         font-size: .9rem;
     }
 
-    .containt-div {
+    /* .containt-div {
         color: #18dc32;
-    }
+    } */
 
 }
 
 @media(max-width: 436px) {
     .logo {
-        font-size: 2.5rem;
+        font-size: 1rem;
+        margin-left: 1px;
     }
 
     .nav-ul a {
@@ -637,16 +637,34 @@ body {
 
 }
 
-@media(max-width: 386px) {
+@media(max-width: 415px) {
+    .main-section img  {
+        width: 100
+    }
+
+    .navbar .logo h1  {
+        font-size: 1.5rem;
+        margin-left: 3px;
+    }
+
+    .upcoming-tours-containt {
+        width: 100%;
+    }
+
     .nav-btn a {
         font-size: .7rem;
     }
 
     .nav-ul {
-        padding-right: .4rem;
+        padding-right: 2rem;
+        font-size: 2rem;
     }
 
     .upcoming-tours-div {
-        height: 180vh;
+        height: 155vh;
+    }
+
+    .tours-img {
+        width: 80%;
     }
 }
